@@ -27,10 +27,12 @@ public class MemberController {
 	@Autowired
 	private HttpSession session;
 	
-	@RequestMapping(value="/index", method=RequestMethod.GET)
-	public String index() {
-		return "index";
-	}
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index() {
+
+        return "index";
+    }
+	
 	
 	// memberJoinForm
 	@RequestMapping(value="/memberJoinForm", method=RequestMethod.GET)
